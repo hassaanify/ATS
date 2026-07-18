@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { Calendar, Zap, Target } from 'lucide-react'
+import { getAssetPath } from '@/lib/path-helper'
 
 export function AboutSection() {
   const ref = useRef(null)
@@ -86,7 +87,7 @@ export function AboutSection() {
             <div className="glass-morphism rounded-2xl p-8 glow-blue">
               <div className="aspect-video bg-gradient-to-br from-blue-900/20 to-purple-900/20 rounded-xl overflow-hidden border border-white/10">
                 <img
-                  src="/images/semiconductors/af.png"
+                  src={getAssetPath('images/semiconductors/af.png')}
                   alt="ATS Global Semiconductor Facilities"
                   className="w-full h-full object-cover"
                 />

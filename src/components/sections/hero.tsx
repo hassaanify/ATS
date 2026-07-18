@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { ParticleBackground, CircuitPattern, WaferVisualization } from '@/components/animations/particles'
+import { getAssetPath } from '@/lib/path-helper'
 
 export function HeroSection() {
   const scrollToServices = () => {
@@ -37,7 +38,7 @@ export function HeroSection() {
         >
           <div className="inline-block p-6 glass-morphism rounded-2xl mb-6">
             <img
-              src="/images/logo/LOGO.png"
+              src={getAssetPath('images/logo/LOGO.png')}
               alt="ATS Global LLC Logo"
               className="h-16 w-auto object-contain"
             />

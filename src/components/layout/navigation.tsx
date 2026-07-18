@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import { getAssetPath } from '@/lib/path-helper'
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -50,7 +51,7 @@ export function Navigation() {
             className="flex items-center space-x-3"
           >
             <img
-              src="/images/logo/LOGO.png"
+              src={getAssetPath('images/logo/LOGO.png')}
               alt="ATS Global LLC"
               className="h-10 w-auto object-contain"
             />

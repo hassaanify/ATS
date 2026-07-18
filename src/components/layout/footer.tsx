@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Linkedin, Mail, MapPin, Phone, ArrowUp } from 'lucide-react'
+import { getAssetPath } from '@/lib/path-helper'
 
 export function Footer() {
   const scrollToTop = () => {
@@ -51,7 +52,7 @@ export function Footer() {
               {/* Logo */}
               <div className="mb-6">
                 <img
-                  src="/images/logo/LOGO.png"
+                  src={getAssetPath('images/logo/LOGO.png')}
                   alt="ATS Global LLC"
                   className="h-16 w-auto object-contain"
                 />

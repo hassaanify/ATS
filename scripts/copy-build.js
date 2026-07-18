@@ -56,6 +56,16 @@ if (fs.existsSync(srcDir)) {
     }
   }
   console.log('Build files successfully copied to repository root.');
+  
+  // Create .nojekyll file in out directory
+  const nojekyllPath = path.join(srcDir, '.nojekyll');
+  fs.writeFileSync(nojekyllPath, '');
+  console.log('.nojekyll file created in out directory');
+  
+  // Also copy .nojekyll to root
+  const nojekyllRootPath = path.join(destDir, '.nojekyll');
+  fs.writeFileSync(nojekyllRootPath, '');
+  console.log('.nojekyll file created in root directory');
 } else {
   console.error('Error: out/ directory does not exist. Run npm run build first.');
 }

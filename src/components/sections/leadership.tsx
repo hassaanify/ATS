@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { Linkedin, Mail, Award, BookOpen, Users, Briefcase } from 'lucide-react'
+import { getAssetPath } from '@/lib/path-helper'
 
 export function LeadershipSection() {
   const ref = useRef(null)
@@ -99,7 +100,7 @@ export function LeadershipSection() {
                   <div className="aspect-square bg-gradient-to-br from-blue-900/20 to-purple-900/20 rounded-2xl flex items-center justify-center border-2 border-white/10 overflow-hidden">
                     {/* CEO Image - h.png */}
                     <img
-                      src="/images/leadership/h.png"
+                      src={getAssetPath('images/leadership/h.png')}
                       alt="Muhammad Hassan Tahir - CEO & Founder of ATS Global LLC"
                       className="w-full h-full object-cover rounded-2xl"
                       onError={(e) => {
