@@ -87,10 +87,12 @@ export function Navigation() {
               onClick={() => setIsOpen(!isOpen)}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="lg:hidden w-10 h-10 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
+              className="lg:hidden w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors shadow-md"
               aria-label="Toggle menu"
             >
-              {isOpen ? <X size={20} /> : <Menu size={20} />}
+              <div className="text-white">
+                {isOpen ? <X size={20} /> : <Menu size={20} />}
+              </div>
             </motion.button>
 
             {/* CTA Button */}
