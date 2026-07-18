@@ -105,7 +105,7 @@ export function WhyATSSection() {
   }
 
   return (
-    <section className="py-24 bg-gradient-to-br from-white to-blue-50" ref={ref}>
+    <section className="py-24 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800" ref={ref}>
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           variants={containerVariants}
@@ -115,17 +115,17 @@ export function WhyATSSection() {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold text-slate-900 mb-6"
+            className="text-4xl md:text-5xl font-bold text-white mb-6"
           >
-            Why Choose <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">ATS Global</span>
+            Why Choose <span className="gradient-text">ATS Global</span>
           </motion.h2>
           <motion.div
             variants={itemVariants}
-            className="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto mb-8"
+            className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"
           />
           <motion.p
             variants={itemVariants}
-            className="text-xl text-slate-700 max-w-3xl mx-auto"
+            className="text-xl text-gray-300 max-w-3xl mx-auto"
           >
             Our unique combination of deep technical expertise, industry experience, 
             and practical problem-solving approach delivers exceptional results for our clients.
