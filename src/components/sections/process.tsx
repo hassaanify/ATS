@@ -164,7 +164,7 @@ export function ProcessWorkflowSection() {
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 glass-morphism rounded-xl p-6 lg:p-8 hover:glow-blue transition-all duration-300">
+                <div className="flex-1 bg-slate-800/90 backdrop-blur-sm rounded-xl p-6 lg:p-8 border border-slate-700/50 hover:border-blue-500/50 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-300">
                   <div className="lg:flex lg:items-center lg:justify-between">
                     <div className="lg:flex-1">
                       <h3 className="text-2xl font-bold text-white mb-3">{step.title}</h3>

@@ -88,7 +88,7 @@ export function LeadershipSection() {
         >
           <motion.div
             variants={itemVariants}
-            className="glass-morphism rounded-2xl p-8 md:p-12 glow-blue"
+            className="bg-slate-800/90 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-blue-500/30 shadow-2xl shadow-blue-500/20"
           >
             <div className="grid lg:grid-cols-3 gap-8 items-center">
               {/* Photo */}
@@ -218,7 +218,7 @@ export function LeadershipSection() {
               key={index}
               variants={itemVariants}
               whileHover={{ scale: 1.05, y: -5 }}
-              className="glass-morphism rounded-xl p-6 text-center hover:glow-purple transition-all duration-300"
+              className="bg-slate-800/90 backdrop-blur-sm rounded-xl p-6 text-center border border-slate-700/50 hover:border-purple-500/50 hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-300"
             >
               <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <achievement.icon size={24} className="text-white" />
@@ -236,7 +236,7 @@ export function LeadershipSection() {
           animate={isInView ? "visible" : "hidden"}
           className="text-center mt-16"
         >
-          <div className="glass-morphism rounded-2xl p-8 max-w-4xl mx-auto">
+          <div className="bg-slate-800/90 backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto border border-slate-700/50 shadow-xl">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
               "Engineering Tomorrow's Technology Today"
             </h3>

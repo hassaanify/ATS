@@ -143,7 +143,7 @@ export function WhyATSSection() {
               key={index}
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
-              className="group glass-morphism rounded-xl p-8 hover:glow-purple transition-all duration-500"
+              className="group bg-slate-800/90 backdrop-blur-sm rounded-xl p-8 border border-slate-700/50 hover:border-purple-500/50 hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-500"
             >
               <div className="flex items-start space-x-4">
                 {/* Icon */}
@@ -191,7 +191,7 @@ export function WhyATSSection() {
           animate={isInView ? "visible" : "hidden"}
           className="mt-20"
         >
-          <div className="glass-morphism rounded-2xl p-8 md:p-12 text-center">
+          <div className="bg-slate-800/90 backdrop-blur-sm rounded-2xl p-8 md:p-12 text-center border border-slate-700/50 shadow-xl">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
               Accelerate Your Innovation Timeline
             </h3>
